@@ -1,0 +1,112 @@
+
+
+
+
+@fc:#4c4c4c;
+
+.flex{
+    display:flex;
+    display:-webkit-flex;
+    flex-wrap:wrap;
+}
+
+
+.animate(@time){
+    transition:all @time;
+    -webkit-transition:all @time;
+    -moz-transition:all @time;
+}
+
+.opacity(@val){
+    opacity:@val;
+    -webkit-opacity:@val;
+    -moz-opacity:@val;
+    -o-opacity:@val;
+}
+
+.boxSizing{
+    box-sizing:border-box;
+}
+
+.btn(@width;@height;@bg;@fs;@fc;@bw){
+    display:block;
+    width:@width;
+    height:@height;
+    line-height:@height;
+    text-align:center;
+    background:@bg;
+    font-size:@fs;
+    color:@fc;
+    border-radius:@bw;
+    -webkit-border-radius:@bw;
+    -moz-border-radius:@bw;
+    -o-border-radius:@bw;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.borderRadius(@bw){
+    border-radius:@bw;
+    -webkit-border-radius:@bw;
+    -moz-border-radius:@bw;
+    -o-border-radius:@bw;
+    overflow: hidden;
+}
+.boxShadow(@x;@y;@size;@color){
+    box-shadow:@x @y @size @color;
+    -webkit-box-shadow:@x @y @size @color;
+    -moz-box-shadow:@x @y @size @color;
+    -ms-box-shadow:@x @y @size @color;
+    -o-box-shadow:@x @y @size @color;
+}
+
+.imgBox(@w:100%;@h:100%){
+    display:block;
+    width:@w;
+    height:@h;
+    text-align:center;
+    overflow: hidden;
+}
+
+
+.inputPlaceholderColor(@c){
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color:    @c
+    }
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    @c;
+    }
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    @c;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    @c;
+    }
+}
+
+
+.bigImgCenter{
+    position: relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.imgCenter{
+    max-width:100%;
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.textOverflow{
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+
+@theme:#f8b62b;
+@fontActive:@theme;
+
+@swiper-active-color:@theme;
